@@ -1,0 +1,35 @@
+{
+	"schemaVersion": 1,
+	"id": "vrtweaks",
+	"version": "${version}",
+	"name": "VRTweaks",
+	"description": "",
+	"authors": [],
+	"contact": {},
+	"license": "All-Rights-Reserved",
+	"icon": "assets/vrtweaks/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"fabric-datagen": [
+			"ru.deelter.vrtweaks.client.VrtweaksDataGenerator"
+		],
+		"client": [
+			"ru.deelter.vrtweaks.client.VrtweaksClient"
+		],
+		"main": [
+			"ru.deelter.vrtweaks.Vrtweaks"
+		]
+	},
+	"mixins": [
+		"vrtweaks.mixins.json",
+		{
+			"config": "vrtweaks.client.mixins.json",
+			"environment": "client"
+		}
+	],
+	"depends": {
+		"fabricloader": ">=${loader_version}",
+		"fabric": "*",
+		"minecraft": "${minecraft_version}"
+	}
+}
