@@ -3,21 +3,20 @@
 	"id": "vrtweaks",
 	"version": "${version}",
 	"name": "VRTweaks",
-	"description": "",
-	"authors": [],
-	"contact": {},
-	"license": "All-Rights-Reserved",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"DeelTer"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
 	"icon": "assets/vrtweaks/icon.png",
 	"environment": "*",
 	"entrypoints": {
-		"fabric-datagen": [
-			"ru.deelter.vrtweaks.client.VrtweaksDataGenerator"
-		],
-		"client": [
-			"ru.deelter.vrtweaks.client.VrtweaksClient"
-		],
 		"main": [
-			"ru.deelter.vrtweaks.Vrtweaks"
+			"ru.deelter.mods.vrtweaks.VRTweaks"
 		]
 	},
 	"mixins": [
@@ -28,8 +27,12 @@
 		}
 	],
 	"depends": {
-		"fabricloader": ">=${loader_version}",
-		"fabric": "*",
-		"minecraft": "${minecraft_version}"
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21.5",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
 	}
 }

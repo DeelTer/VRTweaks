@@ -1,9 +1,9 @@
 {
 	"required": true,
-	"minVersion": "0.8",
-	"package": "ru.deelter.vrtweaks.mixin",
+	"package": "ru.deelter.mods.vrtweaks.mixin",
 	"compatibilityLevel": "JAVA_21",
 	"mixins": [
+
 	],
 	"injectors": {
 		"defaultRequire": 1
